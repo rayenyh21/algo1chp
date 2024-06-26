@@ -1,0 +1,31 @@
+ALGORITHM Checkpointalgo
+VAR
+    ch :STRING
+    nCh,nv,i:INTEGER :=0
+    nw :INTEGER :=1
+
+BEGIN
+ write(ch)
+ read(ch)
+
+  nw:=1 
+
+  WHILE (ch(i) <> ".") DO
+  nch=nch+1
+    IF (ch(i)== ("a","o","u","e","y","i")) THEN
+        nv+=1
+    END_IF
+    IF (ch(i)==" ") THEN
+        nw+=1
+    END_IF
+    i++
+ END_WHILE
+
+WRITE(" length of the sentence is=", nch)
+WRITE(" Number of the words in the sentence is=",  nw)
+WRITE(" number of the vowls the sentence is=",nv)
+
+    
+
+
+END
